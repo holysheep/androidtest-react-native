@@ -20,21 +20,9 @@ var PUPPIES_DATA = [
 
 var AwesomeProject = React.createClass({
 
-    //getInitialState: function () {
-    //    var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    //    return {
-    //        dataSource: ds.cloneWithRows(this.props.puppies)
-    //    };
-    //},
-
     render: function () {
         var puppy = PUPPIES_DATA[0];
         return (
-            //<ListView
-            //    dataSource: {this.state.dataSource}
-            //    renderRow: {this.renderRow}
-            //    styles: {this.listView} />
-
             <View style={styles.container}>
                 <Image style={styles.image} source={{uri: puppy.images.thumbnail}}/>
                 <View style={styles.rightContainer}>
@@ -44,24 +32,7 @@ var AwesomeProject = React.createClass({
             </View>
         )
     }
-
-
-    //renderRow: function () {
-    //    return ();
-    //}
 });
-
-//var Toolbar = React.createClass({
-//    render: function () {
-//        return (
-//            <ToolbarAndroid
-//                logo={require('image!app_logo')}
-//                title="AwesomeApp"
-//                actions={[{title: 'Settings', icon: require('image!icon_settings'), show: 'always'}]}
-//                onActionSelected={this.onActionSelected}/>
-//        );
-//    }
-//});
 
 var styles = StyleSheet.create({
     container: {
